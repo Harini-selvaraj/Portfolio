@@ -1,0 +1,237 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('back3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+    background-color: #f7f8f8;
+    color: #f8f1f1;
+    padding: 0 20px;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #859dc0, #fcfdff);
+    color: #0f0c0c;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #3528b1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #d8b60b;
+  }
+  
+  section {
+    margin: 50px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  #about h2, #skills h2, #projects h2, #contact h2 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2121dd;
+  }
+  
+  #about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+  
+  .links {
+    margin-top: 20px;
+  }
+  
+  .links .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #6e8efb;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .links .btn:hover {
+    background: #a777e3;
+  }
+  
+  #skills .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 20px;
+    background: #031757;
+    border-radius: 10px;
+    animation: growSkill 1.5s ease-in-out;
+  }
+  
+  #projects .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .project p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact form button {
+    background: #6e8efb;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #contact form button:hover {
+    background-color: #a777e3;
+    transform: translateY(-2px);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: 0.9em;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes growSkill {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
